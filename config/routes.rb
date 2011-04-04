@@ -1,4 +1,5 @@
 SampleApp::Application.routes.draw do
+  # ALEX when you change this file restart the spork server
   get "pages/home"
   get "pages/contact"
   get "pages/about"

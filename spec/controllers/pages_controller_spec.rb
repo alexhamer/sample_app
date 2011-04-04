@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe PagesController do
   render_views
-  describe "GET 'home'" do 
+  describe "GET 'home'" do #ALEX this GET home is just a description; no code
     it "should be successful" do
-      get 'home'
+      get 'home' #ALEX this is the actual code to the get call 
       response.should be_success 
     end
     
@@ -12,7 +12,6 @@ describe PagesController do
       get 'home'
       response.should have_selector("title", :content => "Ruby on Rails Tutorial Sample App | Home")
     end
-    
   end
 
   describe "GET 'contact'" do 
