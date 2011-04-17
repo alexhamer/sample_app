@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   # ALEX when you change this file restart the spork server
   match '/signup',  :to => 'users#new'
@@ -10,10 +10,12 @@ SampleApp::Application.routes.draw do
 #  root_path => '/' 
  # root_url => 'http://localhost:3000/'
   
+  get "users/new"
   get "pages/home"
   get "pages/contact"
   get "pages/about"
   get "pages/help"
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
