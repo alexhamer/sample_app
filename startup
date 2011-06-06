@@ -1,0 +1,6 @@
+autotest
+spork
+rails s
+tail -f log/development.log
+
+http://localhost:3000/

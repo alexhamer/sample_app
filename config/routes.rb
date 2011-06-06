@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  resources :users
+  resources :users #this sets up a table of HTTP actions (restful URLs) or named routes- see Hartl p 259
 
   # ALEX when you change this file restart the spork server
   match '/signup',  :to => 'users#new'
